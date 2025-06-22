@@ -1,7 +1,7 @@
 
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Stars, OrbitControls, Text, Float, Environment } from '@react-three/drei';
+import { Stars, OrbitControls, Environment } from '@react-three/drei';
 import { PortfolioScene } from '@/components/PortfolioScene';
 import { Navigation } from '@/components/Navigation';
 import { HUD } from '@/components/HUD';

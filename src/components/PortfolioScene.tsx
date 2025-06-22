@@ -2,7 +2,6 @@
 import { useRef, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
 import { Text, Float, Sphere, Box, Torus } from '@react-three/drei';
-import { Mesh } from 'three';
 import { AboutSection } from './AboutSection';
 import { ProjectsSection } from './ProjectsSection';
 import { ContactSection } from './ContactSection';
