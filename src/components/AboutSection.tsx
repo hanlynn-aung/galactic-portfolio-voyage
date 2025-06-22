@@ -26,7 +26,6 @@ export const AboutSection = ({ onClose }: AboutSectionProps) => {
           color="#00ffff"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/roboto-mono.woff"
         >
           ABOUT ME
         </Text>
@@ -38,7 +37,6 @@ export const AboutSection = ({ onClose }: AboutSectionProps) => {
           anchorX="center"
           anchorY="middle"
           maxWidth={6}
-          font="/fonts/roboto-mono.woff"
         >
           Welcome to my digital universe! I'm a passionate developer
           who believes in creating immersive experiences that push
@@ -55,7 +53,6 @@ export const AboutSection = ({ onClose }: AboutSectionProps) => {
           anchorX="center"
           anchorY="middle"
           maxWidth={6}
-          font="/fonts/roboto-mono.woff"
         >
           Technologies: React • Three.js • TypeScript • WebGL
           Always exploring new galaxies of possibility...

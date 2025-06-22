@@ -26,12 +26,10 @@ export const ProjectsSection = ({ onClose }: ProjectsSectionProps) => {
           color="#ff4444"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/roboto-mono.woff"
         >
           PROJECT ARCHIVES
         </Text>
         
-        {/* Project 1 */}
         <group position={[-2.5, 1, 0.2]}>
           <Box args={[1.5, 1, 0.1]}>
             <meshStandardMaterial color="#444" wireframe />
@@ -42,13 +40,11 @@ export const ProjectsSection = ({ onClose }: ProjectsSectionProps) => {
             color="#ffcccc"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             3D Web Experience
           </Text>
         </group>
         
-        {/* Project 2 */}
         <group position={[2.5, 1, 0.2]}>
           <Box args={[1.5, 1, 0.1]}>
             <meshStandardMaterial color="#444" wireframe />
@@ -59,13 +55,11 @@ export const ProjectsSection = ({ onClose }: ProjectsSectionProps) => {
             color="#ffcccc"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             Interactive Portfolio
           </Text>
         </group>
         
-        {/* Project 3 */}
         <group position={[0, -1, 0.2]}>
           <Box args={[1.5, 1, 0.1]}>
             <meshStandardMaterial color="#444" wireframe />
@@ -76,7 +70,6 @@ export const ProjectsSection = ({ onClose }: ProjectsSectionProps) => {
             color="#ffcccc"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             Sci-Fi Interface
           </Text>
@@ -89,7 +82,6 @@ export const ProjectsSection = ({ onClose }: ProjectsSectionProps) => {
           anchorX="center"
           anchorY="middle"
           maxWidth={8}
-          font="/fonts/roboto-mono.woff"
         >
           Click on any project cube to explore the codebase
           and see live demonstrations of my work.

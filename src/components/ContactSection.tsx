@@ -26,12 +26,10 @@ export const ContactSection = ({ onClose }: ContactSectionProps) => {
           color="#44ff44"
           anchorX="center"
           anchorY="middle"
-          font="/fonts/roboto-mono.woff"
         >
           TRANSMISSION HUB
         </Text>
         
-        {/* Contact Icons/Links */}
         <group position={[-1.5, 0.5, 0.2]}>
           <Torus args={[0.3, 0.1, 8, 16]}>
             <meshStandardMaterial color="#44ff44" emissive="#001100" />
@@ -42,7 +40,6 @@ export const ContactSection = ({ onClose }: ContactSectionProps) => {
             color="#ccffcc"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             EMAIL
           </Text>
@@ -58,7 +55,6 @@ export const ContactSection = ({ onClose }: ContactSectionProps) => {
             color="#ccffcc"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             GITHUB
           </Text>
@@ -74,7 +70,6 @@ export const ContactSection = ({ onClose }: ContactSectionProps) => {
             color="#ccffcc"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             LINKEDIN
           </Text>
@@ -87,7 +82,6 @@ export const ContactSection = ({ onClose }: ContactSectionProps) => {
           anchorX="center"
           anchorY="middle"
           maxWidth={6}
-          font="/fonts/roboto-mono.woff"
         >
           Ready to collaborate on your next mission?
           Establish communication through any channel above.
