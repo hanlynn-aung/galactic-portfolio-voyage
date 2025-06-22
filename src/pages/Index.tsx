@@ -44,21 +44,25 @@ const Index = () => {
       </Suspense>
 
       {/* HTML Overlays - completely separate from Canvas */}
-      <div className="absolute inset-0 pointer-events-none">
-        <HUD />
-        <Navigation />
-        
-        {/* Welcome Message */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center">
-          <div className="bg-black/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-8 max-w-md">
-            <h1 className="text-4xl font-bold text-cyan-400 mb-4 font-mono">
-              WELCOME TO MY UNIVERSE
-            </h1>
-            <p className="text-cyan-300 text-lg mb-6">
-              Navigate through the stars to explore my portfolio
-            </p>
-            <div className="text-cyan-500 text-sm animate-pulse">
-              Use mouse to control • Click and drag to explore
+      <div className="absolute inset-0 z-10">
+        <div className="relative w-full h-full pointer-events-none">
+          <HUD />
+          <div className="pointer-events-auto">
+            <Navigation />
+          </div>
+          
+          {/* Welcome Message */}
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 text-center">
+            <div className="bg-black/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-8 max-w-md">
+              <h1 className="text-4xl font-bold text-cyan-400 mb-4 font-mono">
+                WELCOME TO MY UNIVERSE
+              </h1>
+              <p className="text-cyan-300 text-lg mb-6">
+                Navigate through the stars to explore my portfolio
+              </p>
+              <div className="text-cyan-500 text-sm animate-pulse">
+                Use mouse to control • Click and drag to explore
+              </div>
             </div>
           </div>
         </div>

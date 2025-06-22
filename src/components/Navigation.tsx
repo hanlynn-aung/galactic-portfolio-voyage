@@ -18,7 +18,7 @@ export const Navigation = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="bg-black/80 border border-cyan-500/50 rounded-lg px-4 py-2 backdrop-blur-sm
-                     hover:border-cyan-400 transition-colors duration-300 pointer-events-auto"
+                     hover:border-cyan-400 transition-colors duration-300"
         >
           <div className="flex items-center space-x-2 text-cyan-400">
             <span className="font-mono text-sm">NAVIGATION</span>
@@ -34,7 +34,7 @@ export const Navigation = () => {
                 key={item.id}
                 className="w-full px-4 py-3 flex items-center space-x-3 text-cyan-300 
                           hover:text-cyan-100 hover:bg-cyan-500/10 transition-colors duration-200
-                          border-b border-cyan-500/20 last:border-b-0 pointer-events-auto"
+                          border-b border-cyan-500/20 last:border-b-0"
                 onClick={() => {
                   setIsOpen(false);
                   // Add navigation logic here
