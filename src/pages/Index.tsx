@@ -10,41 +10,35 @@ import { LoadingScreen } from '@/components/LoadingScreen';
 const Index = () => {
   return (
     <div className="w-full h-screen bg-black relative overflow-hidden">
-      {/* Background starfield */}
-      <div className="absolute inset-0 z-0">
-        <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
-          <Suspense fallback={null}>
-            <Stars 
-              radius={300} 
-              depth={60} 
-              count={5000} 
-              factor={7} 
-              saturation={0} 
-              fade 
-              speed={0.5}
-            />
-            <Environment preset="night" />
-          </Suspense>
-        </Canvas>
-      </div>
-
-      {/* Main 3D Scene */}
-      <div className="absolute inset-0 z-10">
-        <Canvas camera={{ position: [0, 0, 10], fov: 60 }}>
-          <Suspense fallback={<LoadingScreen />}>
-            <PortfolioScene />
-            <OrbitControls 
-              enablePan={true}
-              enableZoom={true}
-              enableRotate={true}
-              minDistance={5}
-              maxDistance={50}
-              autoRotate={false}
-              autoRotateSpeed={0.5}
-            />
-          </Suspense>
-        </Canvas>
-      </div>
+      {/* Single Canvas for everything */}
+      <Canvas camera={{ position: [0, 0, 10], fov: 60 }}>
+        <Suspense fallback={<LoadingScreen />}>
+          {/* Background stars */}
+          <Stars 
+            radius={300} 
+            depth={60} 
+            count={5000} 
+            factor={7} 
+            saturation={0} 
+            fade 
+            speed={0.5}
+          />
+          <Environment preset="night" />
+          
+          {/* Main portfolio scene */}
+          <PortfolioScene />
+          
+          <OrbitControls 
+            enablePan={true}
+            enableZoom={true}
+            enableRotate={true}
+            minDistance={5}
+            maxDistance={50}
+            autoRotate={false}
+            autoRotateSpeed={0.5}
+          />
+        </Suspense>
+      </Canvas>
 
       {/* HUD Overlay */}
       <HUD />
