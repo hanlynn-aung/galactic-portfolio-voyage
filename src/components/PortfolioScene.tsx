@@ -42,7 +42,6 @@ export const PortfolioScene = () => {
             color="#00ffff"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             ABOUT
           </Text>
@@ -67,7 +66,6 @@ export const PortfolioScene = () => {
             color="#00ffff"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             PROJECTS
           </Text>
@@ -91,7 +89,6 @@ export const PortfolioScene = () => {
             color="#00ffff"
             anchorX="center"
             anchorY="middle"
-            font="/fonts/roboto-mono.woff"
           >
             CONTACT
           </Text>
